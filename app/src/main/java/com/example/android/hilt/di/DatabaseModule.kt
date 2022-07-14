@@ -22,7 +22,7 @@ object DatabaseModule {
 
     @Provides
     @Singleton
-    fun provideLog(@ApplicationContext appContext: Context): AppDatabase {
+    fun provideDatabase(@ApplicationContext appContext: Context): AppDatabase {
         return Room.databaseBuilder(
             appContext,
             AppDatabase::class.java,
